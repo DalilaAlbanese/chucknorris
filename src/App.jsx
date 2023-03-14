@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './styles/App.css'
 import Button from './components/Button.jsx'
+import Dropdown from './components/Dropdown.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,8 +21,10 @@ function App() {
 
   return (
     <div className="App">
+        <Dropdown/>
         <Button  type='primary' text='CARICA JOKE'/> 
         <Button type='secondary' text='COPIA TESTO'/> 
+
     </div>
   )
 }
