@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import './App.css'
+import './styles/App.css'
+import Button from './components/Button.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +20,8 @@ function App() {
 
   return (
     <div className="App">
-  
+        <Button  type='primary' text='CARICA JOKE'/> 
+        <Button type='secondary' text='COPIA TESTO'/> 
     </div>
   )
 }
