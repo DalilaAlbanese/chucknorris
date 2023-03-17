@@ -1,12 +1,23 @@
 import React from "react" //chiammiamo react
+import { useState } from 'react'
 import '../styles/Dropdown.css'
+
 const Dropdown =()=>{
+    const [categories, setCategories] = useState([])
+    function  getCategories(){
+        fetch('https://api.chucknorris.io/jokes/categories').then(
+          response => response.json()
+        ).then(
+          data=> {
+            setCategories(data)
+          }
+        )
+      }
     return (
-        <select name="cars" className='menu'>   
-        <option value="volvo">Volvo</option>   
-        <option value="saab">Saab</option>   
-        <option value="mercedes">Mercedes</option>   
-        <option value="audi">Audi</option> 
+        <select name="menu" className='menu' onClick={()=>getCategories()}>   
+        {categories.map((category, index)=>(
+            <option value={category} key={index}>{category}</option>
+        ))}
         </select>
     )
 }
