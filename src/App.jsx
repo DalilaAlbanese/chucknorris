@@ -7,6 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
   const [category,loadcategory] = useState([])
+  const [selection, setSelection]= useState("")
 
   function  loadJoke(){
     fetch('').then(
@@ -19,9 +20,13 @@ function App() {
     
   }
 
+  function handleChange(e){
+      setSelection(e)
+  }
+
   return (
     <div className="App">
-        <Dropdown/>
+        <Dropdown handle={handleChange}/>
         <Button  type='primary' text='CARICA JOKE'/> 
         <Button type='secondary' text='COPIA TESTO'/> 
 
