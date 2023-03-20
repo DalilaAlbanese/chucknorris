@@ -17,7 +17,7 @@ const Dropdown =({handle})=>{
         )
       }
     return (
-        <select name="menu" className='menu' onClick={()=>getCategories()} onChange={handleChange(e)}>   
+        <select name="menu" className='menu' onClick={()=>getCategories()} onChange={(e) => handleChange(e)}>   
         {categories.map((category, index)=>(
             <option value={category} key={index}>{category}</option>
         ))}
