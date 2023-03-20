@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './styles/App.css'
 import Button from './components/Button.jsx'
 import Dropdown from './components/Dropdown.jsx'
-
+import JokeRender from './components/JokeRender'
 function App() {
   const [count, setCount] = useState(0)
   const [joke, setJoke] = useState("")
@@ -27,6 +27,10 @@ function App() {
   return (
     <div className="App">
         <Dropdown handle={handleChange}/>
+        {joke != "" &&
+        <JokeRender joke={joke} />
+
+        }
         <Button  type='primary' text='CARICA JOKE'/> 
         <Button type='secondary' text='COPIA TESTO'/> 
 
