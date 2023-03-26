@@ -1,6 +1,42 @@
+
+
 .App{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #D5DDBC;
+}
+
+#title{
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    padding-top: 40px;
+    font-family: 'IM Fell Great Primer SC', serif;
+  }
+
+  #p{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-family: 'IM Fell Great Primer SC', serif;
+  }
+
+  #img{
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 394px) {
+
+    #p{
+      max-width: 1000px;
+    }
+    #img{
+      display: block;
+      margin-top: 30px;
+    }
 }

@@ -46,9 +46,9 @@ function copy(){
 
   return (
     <div className="App">
-        <h1>Webapp API Chuck Norris</h1>
-        <p>Design di una pagina che utilizza la API di chucknorris.io per generare alla pressione di un pulsante una battuta del tipo che selezioni nel menu a tendina qui sotto.</p>
-        <img src={logoChuck}/>
+        <h1 id='title'>Webapp API Chuck Norris</h1>
+        <p id='p'>Design di una pagina che utilizza la API di chucknorris.io per generare alla pressione di <br /> un pulsante una battuta del tipo che selezioni nel menu a tendina qui sotto.</p>
+        <img id="img" src={logoChuck}/>
         <Dropdown handle={handleChange}/>
         {joke != "" &&
         <JokeRender joke={joke} />

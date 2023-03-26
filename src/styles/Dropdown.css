@@ -1,6 +1,11 @@
 .menu{
     background-color: #937B63;
-    width: 28%;
     border: none;
-    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    width: 550px;
+    height: 55px;
+    outline: none;
     }
+    
