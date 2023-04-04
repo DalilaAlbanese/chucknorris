@@ -3,9 +3,18 @@
     border: none;
     font-size: 20px;
     text-align: center;
-    padding: 10px 0px 10px 0px;
+    margin-bottom: 50px;
     width: 550px;
-    height: 55px;
+    height: 60px;
     outline: none;
     }
-    
+
+.menu option{
+    padding: 10px 0px 10px 0px;
+}
+
+@media (max-width: 600px) {
+    .menu{
+        width: 70%;
+    }
+}

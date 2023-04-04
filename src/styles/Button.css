@@ -15,7 +15,9 @@
     color: #D5DDBC;
     width: 450px;
     height: 55px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -28,8 +30,8 @@
 .btn-secondary{
     background-color: #AA9190;
 }
-@media screen and (min-width: 394px) {
-    .buttons{
+@media (max-width: 600px) {
+    .btn{
         width: 255px;
     }
     .margin-top-20{
